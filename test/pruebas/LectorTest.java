@@ -20,7 +20,7 @@ public class LectorTest {
     
     @Test
     public void probarLecturaPrimerLinea() throws IOException{
-        Lector l=new Lector("C:/Users/E205-1/Documents/sii/juego.txt"); 
+        Lector l=new Lector("juego.txt"); 
         Posicion limite=l.getLimiteSuperior();
         Assert.assertTrue(limite.getX()>0);
         Assert.assertTrue(limite.getY()>0);
@@ -28,7 +28,7 @@ public class LectorTest {
     
     @Test
     public void pruebaLaConstruccionDelLector() throws FileNotFoundException{
-       Lector l=new Lector("C:/Users/E205-1/Documents/sii/juego.txt");        
+       Lector l=new Lector("juego.txt");        
     }
     
     @Test
